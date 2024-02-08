@@ -1,0 +1,348 @@
+// a
+a
+  color: $text-color
+  text-decoration: none
+
+// body
+body
+  font-family: 'Fixel'
+  background: $background-color
+  color: $text-color
+
+.title
+  text-align: center
+  font-size: 52px
+  font-weight: 400
+  letter-spacing: 0.2px
+  padding: 10px
+
+.subtitle
+  text-align: center
+  font-size: 20px
+  font-weight: 400
+  line-height: 150%
+  max-width: 561px
+  padding: 10px
+  margin: 0 auto
+
+.primary_btn
+  background: $primary-color
+  transition: background-color .2s ease-in-out
+  @include button
+  &:hover
+    background: darken($primary-color, 18.75%)
+
+.secondary_btn
+  outline: 1px solid $text-color
+  outline-offset: -1px
+  transition: all .2s ease-in-out
+  @include button
+  &:hover
+    background: $text-color
+    color: $primary-color
+
+// header
+.header
+  margin-bottom: 100px
+  &_line
+    padding: 20px 0
+    margin-bottom: 95px
+  &_logo
+    display: flex
+    align-items: center
+    img
+      height: 35px
+      width: auto
+  &_nav
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 30px
+    &_link
+      padding: 10px
+      transition: color .2s ease-in-out
+      &:hover
+        color: $primary-color
+  &_btn
+    display: flex
+    align-items: center
+    justify-content: right
+    .secondary_btn
+      padding: 13px 46px
+  &_title
+    text-align: center
+    font-size: 80px
+    font-weight: 500
+    line-height: 119%
+    letter-spacing: 0.2px
+    max-width: 725px
+    padding: 10px
+    margin: 0 auto
+    margin-bottom: 122px
+  &_subtitle
+    text-align: center
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.2px
+    max-width: 585px
+    padding: 10px
+    margin: 0 auto
+    margin-bottom: 105px
+  &_buttons
+    display: flex
+    justify-content: center
+    gap: 35px
+    margin-bottom: 35px
+  &_menu
+    display: none
+  &_screen
+    width: 100%
+
+// feature
+.feature
+  padding: 62px 0
+  margin-bottom: 100px
+  .subtitle
+    max-width: 573px
+    margin-bottom: 80px
+  &_slides
+    position: relative
+    height: 759px
+    padding-right: 50px
+    &_wrapper
+      display: flex
+    &_big
+      max-width: 696px
+      width: 100%
+      height: auto
+    &_small
+      position: absolute
+      bottom: 0
+      left: 350px
+  &_cards
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 25px
+    padding: 20px
+    &_item
+      width: 269px
+      margin: 0
+    &_header
+      display: flex
+    &_icon
+      display: block
+      height: fit-content
+      padding: 17px 2px 0 0
+    &_title
+      font-size: 20px
+      font-weight: 500
+      line-height: 150%
+      letter-spacing: 0.1px
+      padding: 10px
+      margin: 0
+    &_descr
+      line-height: 150%
+      letter-spacing: 0.2px
+      height: 106px
+      padding: 10px
+      margin: 0
+
+// content
+.content
+  padding: 50px 0
+  margin-bottom: 100px
+  .subtitle
+    margin-bottom: 44px
+  &_cards
+    display: flex
+    justify-content: center
+    gap: 33px
+    &_item
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+      background: $text-color
+      max-width: 476px
+      padding: 40px
+      border-radius: 10px
+      border: 1px solid #D3D3D3
+      box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15)
+      &:last-child
+        .content_cards_descr
+          margin-bottom: 30px
+        .primary_btn
+          margin-bottom: 30px
+        .content_cards_img
+          border-radius: 14px
+          box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15)
+    &_title
+      text-align: center
+      color: #000
+      font-size: 20px
+      font-weight: 500
+      line-height: 150%
+      letter-spacing: 0.1px
+      padding: 10px
+      margin-bottom: 10px
+    &_descr
+      text-align: center
+      color: #5C5C5C
+      line-height: 150%
+      letter-spacing: 0.2px
+      max-width: 280px
+      padding: 10px
+      margin-bottom: 57px
+    .primary_btn
+      margin-bottom: 57px
+    &_img
+      width: 100%
+      height: auto
+
+// gallery
+.gallery
+  padding: 50px 0
+  margin-bottom: 100px
+  .subtitle
+    margin-bottom: 44px
+  .secondary_btn
+    display: block
+    width: fit-content
+    margin: 0 auto
+  &_images
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 33px
+    row-gap: 44px
+    margin-bottom: 44px
+    &_item
+      border-radius: 12px
+      box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15)
+
+// partner
+.partner
+  padding: 50px 0
+  margin-bottom: 100px
+  .subtitle
+    margin-bottom: 50px
+  .secondary_btn
+    display: block
+    width: fit-content
+    margin: 0 auto
+  &_logos
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    gap: 74px
+    margin-bottom: 50px
+
+// testimonial
+.testimonial
+  padding: 50px 0
+  margin-bottom: 100px
+  .title
+    margin-bottom: 50px
+  &_wrapper
+    display: flex
+    justify-content: center
+    gap: 23px
+  &_column
+    display: flex
+    flex-direction: column
+    gap: 20px
+  &_item
+    max-width: 430px
+    border-radius: 10px
+    border: 1px solid #DEDEDE
+    padding: 40px
+    &_wrapper
+      display: flex
+      // align-items: center
+      gap: 23px
+      margin-bottom: 30px
+    &_img
+      max-height: 50px
+      width: auto
+    &_header
+      display: flex
+      flex-direction: column
+    &_text
+      font-weight: 500
+      line-height: 150%
+      letter-spacing: 0.2px
+    &_descr
+      line-height: 150%
+      letter-spacing: 0.2px
+      width: 90%
+
+// banner
+.banner
+  padding: 80px 0
+  margin-bottom: 100px
+  &_wrapper
+    position: relative
+    overflow: hidden
+    width: 100%
+    border-radius: 33px
+    background: #343434
+    padding: 78px 94px
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15)
+  &_title
+    font-size: 52px
+    line-height: 119.231%
+    letter-spacing: 0.2px
+    max-width: 460px
+    margin-bottom: 37px
+  &_img
+    position: absolute
+    display: block
+    bottom: 0
+    right: 0
+    height: 90%
+
+// footer
+.footer
+  padding: 107px 0
+  &_wrapper
+    display: flex
+    justify-content: space-between
+  &_nav
+    display: flex
+    gap: 75px
+  &_nav_list
+    list-style: none
+    padding: 0
+  &_nav_header
+    font-size: 20px
+    font-weight: 500
+    line-height: 150%
+    letter-spacing: 0.1px
+    margin-bottom: 40px
+  &_nav_item
+    font-size: 16px
+    font-weight: 500
+    line-height: 150%
+    letter-spacing: 0.2px
+    margin-bottom: 19px
+    > a
+      transition: color .2s ease-in-out
+      &:hover
+        color: $primary-color
+    &:last-child
+      margin-bottom: 0
+  &_contact
+    &_item
+      margin-bottom: 10px
+      &_link
+        font-weight: 500
+        line-height: 150%
+        letter-spacing: 0.2px
+        margin-left: 10px
+    &_social
+      display: flex
+      gap: 24px
+      padding: 20px 0
